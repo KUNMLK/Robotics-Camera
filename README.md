@@ -55,9 +55,9 @@
 
 - OpenCV入门（单目相机核心工具）：[github\.com/opencv/opencv](https://github.com/opencv/opencv)
 
-- 单目视觉入门教程：[github\.com/uoip/monocular\-vision\-tutorial](https://github.com/uoip/monocular-vision-tutorial)
+- 单目视觉入门教程：[docs\.opencv\.org/4\.x/](https://docs.opencv.org/4.x/)（OpenCV 官方教程入口）
 
-- 单目SLAM入门（进阶）：[github\.com/gaoxiang12/slam\_book](https://github.com/gaoxiang12/slam_book)（SLAM入门经典书籍源码）
+- 单目SLAM入门（进阶）：[github\.com/cartographer\-project/cartographer](https://github.com/cartographer-project/cartographer)（经典 SLAM 项目）
 
 <a id="section-2-stereo"></a>
 ## 2\. 双目相机 \(Stereo Camera\)
@@ -130,7 +130,7 @@
 
 - ToF深度估计工具：[github\.com/facebookresearch/pytorch3d](https://github.com/facebookresearch/pytorch3d)（支持ToF数据处理与3D重建）
 
-- TI OPT8320参考设计（ToF芯片方案）：[ti\.com/product/OPT8320](https://www.ti.com/product/OPT8320)（硬件入门参考）
+- TI ToF参考资料：[ti\.com/sensors/optical-sensors/3d-time-of-flight/overview.html](https://www.ti.com/sensors/optical-sensors/3d-time-of-flight/overview.html)（官方技术总览）
 
 - ToF相机ROS驱动：[github\.com/ros\-drivers/tof\_camera](https://github.com/ros-drivers/tof_camera)（机器人集成必备）
 
@@ -322,7 +322,7 @@
 
 - 视觉SLAM入门（相机三维感知核心）：[github\.com/gaoxiang12/slam\_book](https://github.com/gaoxiang12/slam_book)（配套源码\+书籍）
 
-- 机器人感知课程（斯坦福）：[cs\.stanford\.edu/people/eroberts/courses/soco/projects/2009/p3/](https://cs.stanford.edu/people/eroberts/courses/soco/projects/2009/p3/)
+- 机器人感知与规划入门：[github\.com/AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics)（机器人算法入门项目）
 
 - 机器人视觉入门教程：[github\.com/kiloreux/awesome\-robotics](https://github.com/kiloreux/awesome-robotics)（汇总各类机器人学习资源）
 
@@ -366,5 +366,3 @@
 |多光谱相机|⭐|农业检测、环境监测|10000元以上|
 
 
-
-> （注：文档部分内容可能由 AI 生成）
