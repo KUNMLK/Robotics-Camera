@@ -373,7 +373,7 @@ If you find this repository helpful, please consider citing:
   title = {Robotics-Camera: 机器人与具身智能相机入门指南},
   author = {KUNMLK},
   month = {May},
-  year = {2025},
+  year = {2026},
   url = {https://github.com/KUNMLK/Robotics-Camera},
 }
 
