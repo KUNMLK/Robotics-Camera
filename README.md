@@ -1,6 +1,6 @@
 # 📷 机器人与具身智能相机入门指南（0基础版）
 
-本指南专为0基础学习者打造，全面列举机器人与具身智能领域所有常见相机，详细说明其核心特点、用途及可直接上手的学习资源。
+本指南专为0基础学习者打造，全面列举机器人与具身智能领域所有常见相机，详细说明其核心特点、用途及可直接上手的学习资源（含GitHub链接），可直接上传至GitHub供新手参考学习。
 
 ## 🌟 什么是机器人视觉？
 
@@ -8,32 +8,33 @@
 
 ## 📚 目录
 
-1. [单目相机](https://www.doubao.cn)
+1. [单目相机](#section-1-monocular)
 
-2. [双目相机](https://www.doubao.cn)
+2. [双目相机](#section-2-stereo)
 
-3. [RGB\-D相机](https://www.doubao.cn)
+3. [RGB\-D相机](#section-3-rgbd)
 
-4. [ToF相机](https://www.doubao.cn)
+4. [ToF相机](#section-4-tof)
 
-5. [事件相机](https://www.doubao.cn)
+5. [事件相机](#section-5-event)
 
-6. [鱼眼相机](https://www.doubao.cn)
+6. [鱼眼相机](#section-6-fisheye)
 
-7. [热成像相机](https://www.doubao.cn)
+7. [热成像相机](#section-7-thermal)
 
-8. [工业相机](https://www.doubao.cn)
+8. [工业相机](#section-8-industrial)
 
-9. [全景相机](https://www.doubao.cn)
+9. [全景相机](#section-9-panoramic)
 
-10. [偏振相机](https://www.doubao.cn)
+10. [偏振相机](#section-10-polarization)
 
-11. [多光谱相机](https://www.doubao.cn)
+11. [多光谱相机](#section-11-multispectral)
 
-12. [实用工具与资源](https://www.doubao.cn)
+12. [实用工具与资源](#section-12-tools)
 
-13. [入门建议与总结](https://www.doubao.cn)
+13. [入门建议与总结](#section-13-summary)
 
+<a id="section-1-monocular"></a>
 ## 1\. 单目相机 \(Monocular Camera\)
 
 最基础、最常见的相机，仅一个镜头，类似人类的一只眼睛，是0基础入门的首选。
@@ -58,6 +59,7 @@
 
 - 单目SLAM入门（进阶）：[github\.com/gaoxiang12/slam\_book](https://github.com/gaoxiang12/slam_book)（SLAM入门经典书籍源码）
 
+<a id="section-2-stereo"></a>
 ## 2\. 双目相机 \(Stereo Camera\)
 
 由两个间距固定的单目镜头组成，模拟人类双眼视觉，通过“视差”（两个镜头成像的差异）计算物体距离，是三维感知的基础设备。
@@ -82,6 +84,7 @@
 
 - 双目相机校准工具：[github\.com/opencv/opencv\_contrib/tree/master/modules/calib3d](https://github.com/opencv/opencv_contrib/tree/master/modules/calib3d)
 
+<a id="section-3-rgbd"></a>
 ## 3\. RGB\-D相机
 
 “RGB彩色图像 \+ Depth深度图像”一体相机，可同时输出物体的颜色信息和距离信息，是室内机器人、具身智能最常用的相机之一，开箱即用。
@@ -106,6 +109,7 @@
 
 - RGB\-D物体抓取示例：[github\.com/IntelRealSense/realsense\-ros](https://github.com/IntelRealSense/realsense-ros)（ROS集成示例）
 
+<a id="section-4-tof"></a>
 ## 4\. ToF相机（飞行时间相机）
 
 基于“飞行时间”原理：发射脉冲光，通过测量光从相机到物体再反射回来的时间，计算物体距离，属于主动成像相机。
@@ -130,6 +134,7 @@
 
 - ToF相机ROS驱动：[github\.com/ros\-drivers/tof\_camera](https://github.com/ros-drivers/tof_camera)（机器人集成必备）
 
+<a id="section-5-event"></a>
 ## 5\. 事件相机（Event\-based Camera）
 
 区别于传统“帧成像”相机，事件相机只记录“亮度变化”的像素（即“事件”），不拍摄完整图像，是高速运动、低延迟场景的专属相机。
@@ -154,6 +159,7 @@
 
 - 经典综述论文：[Event\-Based Vision: A Survey](https://arxiv.org/abs/1904.08405)（理解事件相机原理必备）
 
+<a id="section-6-fisheye"></a>
 ## 6\. 鱼眼相机（Fisheye Camera）
 
 搭载超广角镜头（视野角度通常\&gt;180度，甚至360度），可捕捉大范围场景，适合需要“无盲区”视觉的机器人任务。
@@ -178,6 +184,7 @@
 
 - 鱼眼图像校正示例：[github\.com/opencv/opencv\_samples/blob/master/cpp/fisheye\_calibration\.cpp](https://github.com/opencv/opencv_samples/blob/master/cpp/fisheye_calibration.cpp)
 
+<a id="section-7-thermal"></a>
 ## 7\. 热成像相机（Thermal Camera）
 
 通过检测物体发出的红外辐射（热量）成像，无需依赖可见光，可在完全黑暗、烟雾、粉尘等环境下工作。
@@ -194,14 +201,15 @@
 
 ### 入门资源
 
-- FLIR SDK（热成像相机龙头厂商）：[github\.com/FLIR](https://github.com/FLIR)（含驱动、开发工具）
+- PureThermal UVC Capture 示例：[github\.com/groupgets/purethermal1-uvc-capture](https://github.com/groupgets/purethermal1-uvc-capture)（热成像采集与入门示例）
 
-- 热成像入门教程：[learn\.thermal\.com](https://learn.thermal.com/)（FLIR官方学习平台）
+- 热成像入门教程：[github\.com/groupgets/purethermal1-uvc-capture\#purethermal-uvc-capture-examples](https://github.com/groupgets/purethermal1-uvc-capture#purethermal-uvc-capture-examples)（含 Linux、Windows、Python 示例）
 
 - 热成像相机ROS驱动：[github\.com/ros\-drivers/flir\_camera\_driver](https://github.com/ros-drivers/flir_camera_driver)
 
-- 热成像图像处理示例：[github\.com/FLIR/Spinnaker\-Examples](https://github.com/FLIR/Spinnaker-Examples)
+- 热成像图像处理示例：[github\.com/Teledyne\-MV/Spinnaker\-Examples](https://github.com/Teledyne-MV/Spinnaker-Examples)
 
+<a id="section-8-industrial"></a>
 ## 8\. 工业相机（Industrial Camera）
 
 专为工业场景设计的高稳定性、高分辨率相机，通常采用GigE、USB3 Vision等接口，适配机器人自动化、工业检测等任务。
@@ -226,6 +234,7 @@
 
 - 工业视觉入门项目：[github\.com/topics/industrial\-vision](https://github.com/topics/industrial-vision)（汇总各类工业视觉项目）
 
+<a id="section-9-panoramic"></a>
 ## 9\. 全景相机（Panoramic Camera）
 
 由多个镜头（通常2\-6个）组成，可拍摄360度全景图像/视频，无需拼接即可获取完整场景信息，适合大范围环境感知。
@@ -248,6 +257,7 @@
 
 - 全景建图示例：[github\.com/facebookresearch/DeepPanorama](https://github.com/facebookresearch/DeepPanorama)
 
+<a id="section-10-polarization"></a>
 ## 10\. 偏振相机（Polarization Camera）
 
 可捕捉物体的偏振信息（光的振动方向），结合常规图像，能获取物体表面纹理、粗糙度等额外信息，适合复杂场景的视觉识别。
@@ -270,6 +280,7 @@
 
 - 偏振视觉入门论文：[Polarization Vision: A Review](https://arxiv.org/abs/2004.05343)
 
+<a id="section-11-multispectral"></a>
 ## 11\. 多光谱相机（Multispectral Camera）
 
 可捕捉可见光之外的多个光谱波段（如近红外、短波红外），能获取物体的光谱信息，适合需要“穿透”或“区分”特定物质的任务。
@@ -290,8 +301,9 @@
 
 - 多光谱相机ROS驱动：[github\.com/ros\-drivers/multispectral\_camera](https://github.com/ros-drivers/multispectral_camera)
 
-- 农业多光谱应用示例：[github\.com/micasense/AgPipeline](https://github.com/micasense/AgPipeline)
+- 农业多光谱应用示例：[github\.com/micasense](https://github.com/micasense)（官方组织页，包含相关项目入口）
 
+<a id="section-12-tools"></a>
 ## 12\. 实用工具与资源
 
 汇总机器人与具身智能相机开发必备工具、学习资源和社区，0基础可直接上手。
@@ -320,10 +332,11 @@
 
 - ROS官方问答社区：[answers\.ros\.org](https://answers.ros.org/)（机器人相机集成问题首选）
 
-- Stack Overflow（机器人视觉标签）：[stackoverflow\.com/questions/tagged/robotics](https://stackoverflow.com/questions/tagged/robotics)
+- GitHub Robotics 主题页：[github\.com/topics/robotics](https://github.com/topics/robotics)（相关项目与讨论入口）
 
 - GitHub Issues：所有上述资源的GitHub仓库，直接提问作者/社区
 
+<a id="section-13-summary"></a>
 ## 13\. 入门建议与总结
 
 ### 🚀 0基础入门步骤（按难度排序）
@@ -354,4 +367,4 @@
 
 
 
-
+> （注：文档部分内容可能由 AI 生成）
