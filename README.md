@@ -377,5 +377,3 @@ If you find this repository helpful, please consider citing:
   url = {https://github.com/KUNMLK/Robotics-Camera},
 }
 
-<div align="center"> <a href="https://star-history.com/#KUNMLK/Robotics-Camera&Date"> <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=KUNMLK/Robotics-Camera&type=Date" width="600" /> </a> </div> ```
-
